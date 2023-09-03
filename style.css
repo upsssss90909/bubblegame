@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pannel {
+  width: 80%;
+  height: 80%;
+  background-color: beige;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  position: relative;
+}
+#toppannel {
+  width: 100%;
+  /* height: 50px; */
+  background-color: rgb(38, 39, 39);
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+#toppannel .elem {
+  /* border: solid 1px white; */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+}
+#toppannel .elem .box {
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#pannelbottom {
+  width: 100%;
+  height: calc(100% - 89px);
+  /* background-color: crimson; */
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+ 
+ 
+}
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  /* margin: 7px; */
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(38, 39, 39);
+}
+.bubble:hover {
+  background-color: rgba(38, 39, 39, 0.571);
+  cursor: pointer;
+}
+#bottom_inner {
+  width: 100%;
+  height: calc(100% - 89px);
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+  top: 89px;
+  left: 100%;
+  /* border: solid 10px rgb(64, 1, 1); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  
+}
+#bottom_inner h1 {
+  color: white;
+  
+  font-size: 100px;
+  text-transform: uppercase;
+
+
+}
+
+#pannelbottom-1{
+  height: calc(100% - 89px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#pannelbottom-2{
+  height: 98%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.581);
+  position: absolute;
+  top:-100%;
+  
+  left: 0;
+  
+  transition: position 2s ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+#start h2{
+ color: black;
+ border: solid 2px black;
+ padding:4px 10px;
+ border-radius: 10px;
+ background-color: green;
+  
+}
+#start:hover{
+  cursor: pointer;
+}
+#pannelbottom-2 h1 {
+  color:white;
+  opacity: 1;
+  font-size: 100px;
+  
+  padding: 50px 120px;
+  border-radius: 30px;
+
+  
+}
